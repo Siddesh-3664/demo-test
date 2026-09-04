@@ -1,5 +1,6 @@
 package com.demo.order;
 
+import io.opentelemetry.api.trace.Span;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -25,7 +26,7 @@ public class OrderController {
     public ResponseEntity<OrderResponse> orders(@Valid @RequestBody OrderRequest req,
                                                 @RequestHeader(value = "X-Scenario", required = false) String scenario) {
         UUID orderId = UUID.randomUUID();
-        String traceId = "pending";
+        String traceId = Span.current().getSpanContext().getTraceId();
         try {
             processingClient.process(orderId, req, scenario);
             OrderResponse body = new OrderResponse(orderId, traceId, "CREATED", null);
