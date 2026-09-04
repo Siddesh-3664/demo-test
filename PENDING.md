@@ -17,6 +17,12 @@
 | S3.3 return real traceId | yes | no (Docker Desktop down) | PENDING |
 | S3.4 verify-s3.ps1 | yes | no (Docker Desktop down); PowerShell syntax check PASS | PENDING |
 
+## Status of Sprint 4 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S4.1 Ollama on host | n/a (host install) | no (Ollama not installed) | PENDING |
+| S4.2 Python skeleton + /health | yes | no (Docker + Ollama needed) | PENDING |
+
 ## Status of Sprint 0 tasks
 | Task | Files written | Acceptance run | Acceptance result |
 |---|---|---|---|
