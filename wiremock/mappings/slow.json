@@ -1,0 +1,8 @@
+{
+  "priority": 1,
+  "request": { "method": "POST", "urlPath": "/thirdparty/enrich",
+               "headers": { "X-Scenario": { "equalTo": "slow" } } },
+  "response": { "status": 200, "jsonBody": { "enriched": true },
+                "headers": { "Content-Type": "application/json" },
+                "delayDistribution": { "type": "uniform", "lower": 2000, "upper": 5000 } }
+}
