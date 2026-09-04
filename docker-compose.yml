@@ -65,8 +65,16 @@ services:
     image: alpine:3.20
     command: ["sleep", "infinity"]
   persistence-service:
-    image: alpine:3.20
-    command: ["sleep", "infinity"]
+    build: ./persistence-service
+    ports: ["8083:8083"]
+    depends_on:
+      postgres: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8083/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 30s
   ai-service:
     image: alpine:3.20
     command: ["sleep", "infinity"]

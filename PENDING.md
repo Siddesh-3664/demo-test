@@ -16,3 +16,8 @@
 | S0.2 OTEL java agent jar | yes | yes (`-gt 15MB` = True) | PASS |
 | S0.3 docker-compose.yml | yes | no (Docker missing) | PENDING |
 | S0.4 lib.ps1 + verify-s0.ps1 | yes | no (Docker missing); PowerShell syntax check PASS | PENDING |
+
+## Status of Sprint 1 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S1.1 persistence-service | yes | no (Docker missing) | PENDING |
