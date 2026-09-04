@@ -1,4 +1,5 @@
 server.port: 8082
 downstream:
   persistence-url: http://${PERSISTENCE_HOST:persistence-service}:8083
+  thirdparty-url: http://${WIREMOCK_HOST:wiremock}:8080
 management.endpoints.web.exposure.include: health
