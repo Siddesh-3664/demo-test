@@ -1,0 +1,4 @@
+server.port: 8081
+downstream:
+  processing-url: http://${PROCESSING_HOST:processing-service}:8082
+management.endpoints.web.exposure.include: health

@@ -59,8 +59,16 @@ services:
 
   # ---- placeholders, replaced in later sprints ----
   order-service:
-    image: alpine:3.20
-    command: ["sleep", "infinity"]
+    build: ./order-service
+    ports: ["8081:8081"]
+    depends_on:
+      processing-service: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8081/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 30s
   processing-service:
     build: ./processing-service
     ports: ["8082:8082"]
