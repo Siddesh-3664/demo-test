@@ -1,0 +1,4 @@
+server.port: 8082
+downstream:
+  persistence-url: http://${PERSISTENCE_HOST:persistence-service}:8083
+management.endpoints.web.exposure.include: health
