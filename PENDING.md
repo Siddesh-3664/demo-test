@@ -7,6 +7,13 @@
 ## Sprint gates run
 - `.\scripts\verify-s0.ps1` → `SPRINT 0 GREEN` (compose config valid, postgres healthy, otel jar present)
 - `.\scripts\verify-s1.ps1` → `SPRINT 1 GREEN` (3 orders → 201, 3 rows written, validation → 400)
+- `.\scripts\verify-s2.ps1` → `SPRINT 2 GREEN` (fast/slow/fail scenarios, ERROR log present)
+
+## Status of Sprint 3 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S3.1 collector config + Jaeger | yes | yes (collector ready, jaeger 200) | PASS |
+| S3.2 attach agent to 3 services | yes | no (Docker Desktop down) | PENDING |
 
 ## Status of Sprint 0 tasks
 | Task | Files written | Acceptance run | Acceptance result |
