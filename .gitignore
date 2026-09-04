@@ -1,0 +1,7 @@
+target/
+node_modules/
+__pycache__/
+.venv/
+otel/*.jar
+frontend/dist/
+*.log
