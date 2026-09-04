@@ -15,6 +15,7 @@
 | S3.1 collector config + Jaeger | yes | yes (collector ready, jaeger 200) | PASS |
 | S3.2 attach agent to 3 services | yes | no (Docker Desktop down) | PENDING |
 | S3.3 return real traceId | yes | no (Docker Desktop down) | PENDING |
+| S3.4 verify-s3.ps1 | yes | no (Docker Desktop down); PowerShell syntax check PASS | PENDING |
 
 ## Status of Sprint 0 tasks
 | Task | Files written | Acceptance run | Acceptance result |
