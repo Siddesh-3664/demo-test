@@ -23,3 +23,4 @@
 | S1.1 persistence-service | yes | no (Docker missing) | PENDING |
 | S1.2 processing-service | yes | no (Docker missing) | PENDING |
 | S1.3 order-service | yes | no (Docker missing) | PENDING |
+| S1.4 verify-s1.ps1 | yes | no (Docker missing); PowerShell syntax check PASS | PENDING |
