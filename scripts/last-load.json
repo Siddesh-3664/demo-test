@@ -1,0 +1,32 @@
+[
+    {
+        "Scenario":  "fail",
+        "Status":  502,
+        "Ms":  541,
+        "TraceId":  "pending"
+    },
+    {
+        "Scenario":  "fast",
+        "Status":  201,
+        "Ms":  207,
+        "TraceId":  "pending"
+    },
+    {
+        "Scenario":  "fast",
+        "Status":  201,
+        "Ms":  152,
+        "TraceId":  "pending"
+    },
+    {
+        "Scenario":  "fast",
+        "Status":  201,
+        "Ms":  135,
+        "TraceId":  "pending"
+    },
+    {
+        "Scenario":  "fast",
+        "Status":  201,
+        "Ms":  172,
+        "TraceId":  "pending"
+    }
+]
