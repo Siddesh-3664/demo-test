@@ -5,3 +5,4 @@ __pycache__/
 otel/*.jar
 frontend/dist/
 *.log
+*.egg-info/
