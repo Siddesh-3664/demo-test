@@ -22,6 +22,7 @@
 |---|---|---|---|
 | S4.1 Ollama on host | n/a (host install) | no (Ollama not installed) | PENDING |
 | S4.2 Python skeleton + /health | yes | no (Docker + Ollama needed) | PENDING |
+| S4.3 schemas + budget | yes | yes (pytest 5/5 pass) | PASS |
 
 ## Status of Sprint 0 tasks
 | Task | Files written | Acceptance run | Acceptance result |

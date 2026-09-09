@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic>=2
+pydantic-settings
+sse-starlette
+chromadb
+
+[dev]
+pytest
+pytest-asyncio
+respx

@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: ai-service
+Version: 0.0.1
+Summary: AI observability assistant for the demo
+Requires-Python: >=3.12
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: httpx
+Requires-Dist: pydantic>=2
+Requires-Dist: pydantic-settings
+Requires-Dist: sse-starlette
+Requires-Dist: chromadb
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: respx; extra == "dev"
