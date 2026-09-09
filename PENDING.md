@@ -25,6 +25,47 @@
 | S4.3 schemas + budget | yes | yes (pytest 5/5 pass) | PASS |
 | S4.4 Jaeger tool | yes | yes (pytest 13/13 pass); live test pending Docker | PASS (unit) |
 | S4.5 intent router | yes | yes (pytest 11/11 pass) | PASS |
+| S4.6 LLM client + prompt | yes | no (needs Ollama) | PENDING |
+| S4.7 pipeline + /chat | yes | no (needs Docker + Ollama) | PENDING |
+| S4.8 eval v0 | yes | no (needs Docker + Ollama) | PENDING |
+| S4.9 verify-s4.ps1 | yes | no (needs Docker + Ollama) | PENDING |
+
+## Status of Sprint 5 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S5.1 Prometheus config | yes | no (needs Docker) | PENDING |
+| S5.2 Grafana datasources | yes | no (needs Docker) | PENDING |
+| S5.3 Services dashboard | yes | no (needs Docker) | PENDING |
+| S5.4 Prometheus tool | yes | yes (pytest 5/5 pass) | PASS (unit) |
+| S5.5 Wire TREND | yes | no (needs Docker + Ollama) | PENDING |
+| S5.6 eval + verify | yes | no (needs Docker + Ollama) | PENDING |
+
+## Status of Sprint 6 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S6.1 Loki config | yes | no (needs Docker) | PENDING |
+| S6.2 Grafana trace↔logs | n/a (manual) | no (needs Docker) | PENDING |
+| S6.3 Loki tool | yes | yes (pytest 6/6 pass) | PASS (unit) |
+| S6.4 Wire WHY_FAIL | yes | no (needs Docker + Ollama) | PENDING |
+| S6.5 eval + verify | yes | no (needs Docker + Ollama) | PENDING |
+
+## Status of Sprint 7 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S7.1 Scaffold | yes | no (needs npm install) | PENDING |
+| S7.2 TriggerPanel | yes | no (needs npm + Docker) | PENDING |
+| S7.3 ChatPanel | yes | no (needs npm + Docker) | PENDING |
+| S7.4 verify-s7.ps1 | yes | no (needs npm + Docker) | PENDING |
+
+## Status of Sprint 8 tasks
+| Task | Files written | Acceptance run | Acceptance result |
+|---|---|---|---|
+| S8.1 Runbooks + Chroma | yes | yes (pytest 4/4 pass); live needs Ollama | PASS (unit) |
+| S8.2 Wire KNOWN + fallback | yes | no (needs Docker + Ollama) | PENDING |
+| S8.3 Frontend update | yes | no (needs npm) | PENDING |
+| S8.4 Full eval suite | yes | no (needs Docker + Ollama) | PENDING |
+| S8.5 LangGraph (optional) | skipped | n/a | CLOSED |
+| S8.6 verify + demo | yes | no (needs Docker + Ollama) | PENDING |
 
 ## Status of Sprint 0 tasks
 | Task | Files written | Acceptance run | Acceptance result |

@@ -104,3 +104,46 @@ def test_trace_id_extraction():
 def test_no_trace_id():
     r = classify("which request was slowest")
     assert r.trace_id is None
+
+
+import pytest
+
+
+@pytest.mark.live
+@pytest.mark.asyncio
+async def test_paraphrase_why_slow():
+    from app.intents import classify_async
+    r = await classify_async("what dragged this request down")
+    assert r.intent == "WHY_SLOW", f"got {r.intent}"
+
+
+@pytest.mark.live
+@pytest.mark.asyncio
+async def test_paraphrase_known():
+    from app.intents import classify_async
+    r = await classify_async("anything documented about this")
+    assert r.intent == "KNOWN", f"got {r.intent}"
+
+
+@pytest.mark.live
+@pytest.mark.asyncio
+async def test_paraphrase_slowest():
+    from app.intents import classify_async
+    r = await classify_async("show me the worst performing request")
+    assert r.intent == "SLOWEST", f"got {r.intent}"
+
+
+@pytest.mark.live
+@pytest.mark.asyncio
+async def test_paraphrase_why_fail():
+    from app.intents import classify_async
+    r = await classify_async("this request blew up")
+    assert r.intent == "WHY_FAIL", f"got {r.intent}"
+
+
+@pytest.mark.live
+@pytest.mark.asyncio
+async def test_paraphrase_trend():
+    from app.intents import classify_async
+    r = await classify_async("are we getting worse over the day")
+    assert r.intent == "TREND", f"got {r.intent}"
